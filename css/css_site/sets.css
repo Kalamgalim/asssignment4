@@ -1,0 +1,52 @@
+.allpage {
+  border-style: solid;
+  border-width: 5 px;
+  border-color: black;
+  margin-top: 20px;
+  margin-right: 320px;
+  margin-bottom: 20px;
+  margin-left: 320px;
+  font-family: Arial;
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+
+}
+.image1 {
+  border-style: solid;
+  border-width: px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 220px;
+}
+.image2 {
+  border-style: solid;
+  border-width: px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 220px;
+}
+.image3 {
+  border-style: solid;
+  border-width: px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 220px;
+}
+.image4 {
+  border-style: solid;
+  border-width: px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 220px;
+}
+body {
+  background-color: blueviolet;
+}

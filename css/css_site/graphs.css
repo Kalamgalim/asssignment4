@@ -1,0 +1,70 @@
+.main {
+  border-style: solid;
+  border-width: 5 px;
+  border-color: black;
+  margin-top: 20px;
+  margin-right: 320px;
+  margin-bottom: 20px;
+  margin-left: 320px;
+  font-family: Arial;
+  background-color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+
+}
+.image1 {
+  
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 140px;
+}
+.image2 {
+ 
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 170px;
+}
+.image3 {
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 170px;
+}
+.image4{
+margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 140px;
+}
+.image5{
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 130px;
+}
+.image6{
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+.image7{
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 130px;
+}
+.image8{
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 170px;
+}
+.body {
+  background-color: violet;
+}
