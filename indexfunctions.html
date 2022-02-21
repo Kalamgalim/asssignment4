@@ -1,0 +1,103 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<link rel="stylesheet" href="css/css_site/functions.css">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+  		<link rel="stylesheet" href="./css/font-awesome.min.css">
+  		<link rel="stylesheet" href="./css/lib.css">
+		<style>
+			body {
+				background-image: url("img/functions.jpg");
+			}
+		</style>
+	</head>
+		
+	<body>
+		 <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+		<div id="header">
+		<div class="allpage">
+			<h2>Functions</h2>
+
+			<p>Suppose we want to map one set to the other: given an element of set A (the input), return an element of set B (the output).</p>
+
+			<p>For example, suppose A = { x | x is a user on our computer system} and B = { x | x is a valid password}. We might want to know, given a user, what is that user's password: the input is the user (from A) and the output is that user's password (from B).</p>
+
+			<p>Let A and B be two sets. A <strong>function</strong> from A to B is an assignment of <em>exactly one</em> element from B to each element of A. We write f(a) = b if b ∈ B is the unique element assigned by the function f to the element a ∈ A. If f is a function from A to B, we write f : A → B.</p>
+
+			<p>It makes sense to model the password example above as a function because each user has exactly one password. Here are two other examples:</p>
+			<ul>
+				<li>
+					Suppose user <tt>root</tt> has password 123, <tt>john</tt> has password p455w0rd, and <tt>guest</tt> has password hello. Call the password function p. Then p(root) = 123, p(john) = p455w0rd, p(guest) = hello. We can also visualize p as follows:
+				
+					<div>
+						<p><img class="image1" src="https://cglab.ca/~discmath/figures/function-example1.png" alt="A visual representation of the function described above" width="40%"/></p>
+					</div>
+				</li>
+				<li>
+					Consider a function g that assigns a grade to each student in the class:
+					<div>
+						<p><img class="image2"src="https://cglab.ca/~discmath/figures/function-example2.png" alt="A visual representation of the function described above" width="40%"/></p>
+					</div>
+				</li>
+			</ul>
+
+			<p>Functions can be specified in several ways:</p>
+			<ul>
+				<li>writing out each pair explicitly: p(root) = 123, . . .</li>
+				<li>a diagram, as in the last two examples</li>
+				<li>a formula: f(x) = 2x<sup>2</sup>  + 1</li>
+			</ul>
+
+			<p>Consider the function f: A → B. We call A the <strong>domain</strong> of f and B the <strong>codomain</strong> of f. Furthermore, if f(a)=b, then b is the <strong>image</strong> of a and a is the <strong>preimage</strong> of b. The set of all images of elements of A is called the <strong>range</strong> of f. For example:</p>
+
+			<ul>
+				<li>
+					In the grades example above:
+					<ul>
+						<li>domain: {Tim,Jo,Lee,Tom,Mark}</li>
+						<li>codomain: {A,B,C,D,F}</li>
+						<li>range: {A,B,C,D}</li>
+						<li>A is the image of Tim</li>
+						<li>Tim is a preimage of A</li>
+					</ul>
+				</li>
+				
+				<li>
+					Let f: Z → Z be defined by f(x)=x<sup>2</sup>.
+					<ul>
+						<li>domain: Z</li>
+						<li>codomain: Z</li>
+						<li>range: { x | x is a non-negative perfect square}</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p>If S is a subset of the domain, we can also look at its image: the subset of B that consists of the images of the elements in S: f(S) = { f(s) | s ∈ S}. In the grades example above, g({Tim,Jo,Lee}) = {A,B}.</p>
+		</div>
+	
+s</body>
+</html>

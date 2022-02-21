@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sets</title>
+	<link href="css/css_site/sets.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+  		<link rel="stylesheet" href="./css/font-awesome.min.css">
+  		<link rel="stylesheet" href="./css/lib.css">
+	<style>
+			body {
+				background-image: url("img/functions.jpg");
+		</style>
+</head>
+<body>
+			 <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+	<div class="allpage">
+		<div id="main">
+			<h2>Sets</h2>
+						
+			<p>A <strong>set</strong> is an <strong>unordered</strong> collection of objects.</p>
+
+			<p>The objects in a set are called the set's <strong>elements</strong> or <strong>members</strong>. They are usually listed inside braces. We write x∈A if x is an element (member) of a set A.</p>
+
+			<p>{1,2,3} is a set with 3 elements. It is the same as the set {1,3,2} (order does not matter) and the set {1,1,2,3,3,3,3} (repetition does not matter). Typically, all objects are the same (for example, numbers), but they do not have to be: { 1, 3, red, blue, John} is a set.</p>
+
+			<p>Ellipses are used when a pattern is clear: {1,2,3,4,. . ., 50} is the set of all integers from 1 to 50, inclusive.</p>
+
+			Some sets we use a lot:
+			<ul>
+				<li>R is the set of real numbers</li>
+				<li>N is the set of natural numbers</li>
+				<li>Z is the set of integers</li>
+				<li>Q is the set of rational numbers</li>
+			</ul>
+
+			<p>It is possible to have a set with no elements: {}. This is the <strong>empty set</strong> and is usually denoted ∅ . This is <strong>not</strong> the same as { ∅ }, which is a set with one element (that happens to be a (empty) set).</p>
+
+			<p>The number of <strong>distinct</strong> elements in a set S is called its <strong>cardinality</strong> and is denoted |S|. If |S| is infinite (for example, Z), we say the set is <strong>infinite</strong>.</p>
+
+			<p>One common way to define a set is <strong>set builder</strong> notation. Here are two examples:</p>
+			<ul>
+				<li>R = { r | r is a real number} </li>
+				<li>O = { x | x is an odd integer} </li>
+			</ul>
+
+			<h2>Set Operations</h2>
+
+			Several operations can be performed on sets.
+
+			<ul>
+				<li>
+					<strong>Union</strong>: Given two sets A and B, the <strong>union</strong> A ∪ B is the set of all elements that are in either A or B. For example, if A = { 1,3,5 } and B = { 2,3,6 }, then A ∪ B = { 1,2,3,4,5,6 }. Note that A ∪ B = {x | (x ∈ A) ∨ (x ∈ B)}.
+
+					<div>
+						<p><img class="image1" src="https://cglab.ca/~discmath/figures/venndiagram-union.png" alt="Venn diagram for the union of two sets" width="40%"/></p>
+					</div>
+				</li>
+				
+				<li>
+					<strong>Intersection</strong>: Given two sets A and B, the <strong>intersection</strong> A ∩ B is the set of all elements that are in both A and B. For example, if A = { 1,2,3,4} and B = { 3,4,5,6 }, then A ∩ B = { 3,4 }. Note that A ∩ B = { x | (x ∈ A) ∧ (x ∈ B) \}. We say that A and B are <strong>disjoint</strong> if A ∩ B = ∅.
+
+					<div>
+						<p><img class="image2" src="https://cglab.ca/~discmath/figures/venndiagram-intersection.png" alt="Venn diagram for the intersection of two sets"  width="40%"/></p>
+					</div>
+				</li>
+				
+				<li>
+					<strong>Difference</strong>: Given two sets A and B, the <strong>difference</strong> A\B is the set of all elements that are in A but not in B. For example, if A = { 1,2,3,4 } and B = { 3,4 }, then A\B = { 1,2 }. Note that A \B = { x | (x ∈ A) ∧ (x ∉ B)}. A \ B is also denoted A - B.
+
+					<div>
+						<p><img class="image3" src="https://cglab.ca/~discmath/figures/venndiagram-difference.png" alt="Venn diagram for the difference of two sets" width="40%"/></p>
+					</div>
+				</li>
+
+				<li>
+					<strong>Complement</strong>: Given a set A, the <strong>complement</strong> A is the set of all elements that are <strong>not</strong> in A. To define this, we need some definition of the <strong>universe</strong> of all possible elements U. We can therefore view the complement as a special case of set difference, where A = U \A. For example, if U = Z and A = { x | x is an odd integer}, then A = { x | x is an even number}. Note that A = { x | x ∉ A }.
+
+					<div>
+						<p><img class="image4" src="https://cglab.ca/~discmath/figures/venndiagram-complement.png" alt="Venn diagram for the complement of two sets" width="40%"/></p>
+					</div>
+				</li>
+
+				<li>
+					<strong>Cartesian Product</strong>: Given two sets A and B, the <strong>cartesian product</strong> A × B is the set of ordered pairs where the first element is in A and the second element is in B. We have A × B = {(a,b) | a ∈ A ∧ b ∈ B \}. For example, if A = { 1,2,3 } and B = { a,b }, then A × B = {(1,a),(1,b),(2,a),(2,b),(3,a),(3,b)}.
+				</li>
+			</ul>
+
+	</div>
+		
+			
+</body>
+</html>

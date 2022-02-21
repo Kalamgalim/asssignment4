@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dicrete Mathematics</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+<script src="script.js"></script>
+  </head>
+<body>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+
+<div id="headerwrap">
+  <div class="container">
+    <div class="row container">
+      <div class="col-lg-8 col-lg-ofsset-2">
+        <br><br><br>
+          <h1 align="center">About us</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container w">
+  <div class="row centered">
+    <br><br>
+    <div id="dg">
+      <div class="container">
+        <div class="row centered">
+          <h4 onclick="this.innerHTML='We are here!'">Click on this text!</h4>
+
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.9542107610173!2d71.41613421503615!3d51.090852548895384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a605525605%3A0x4dff4a1973f7567e!2sAstana%20IT%20University!5e0!3m2!1sru!2skz!4v1645302165533!5m2!1sru!2skz" width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+        <div id="dg">
+          <div class="container">
+            <div class="row centered">
+              <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+  style="background-color:#f9f9f9;font-size: 25px;
+  font-weight: 600;">
+  Mouse Over Me</div>
+
+    <script>
+    function mOver(obj) {
+      obj.innerHTML = "Our email address"
+    }
+    function mOut(obj) {
+      obj.innerHTML = "Mouse Over Me"
+    }
+    </script>
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+   style="background-color:#f9f9f9;font-size: 25px;
+   font-weight: 600;">
+   Click Me</div>
+
+   <script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#f9f9f9";
+  obj.innerHTML = "moldirkalamgali@gmail.com";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#f9f9f9";
+  obj.innerHTML="Thank You";
+}
+</script>
+
+
+<button type="button">Click Me!</button>
+
+
+</body>
+</html>

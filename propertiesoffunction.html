@@ -1,0 +1,176 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<link rel="stylesheet" href="css/css_site/propertiesoffunction.css">
+				<link rel="stylesheet" href="./css/bootstrap.css">
+  		<link rel="stylesheet" href="./css/font-awesome.min.css">
+  		<link rel="stylesheet" href="./css/lib.css">
+		<title>Properties of function</title>
+		<style>
+			body {
+				background-image: url("img/Counting & Probability.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+		<div class="allpage">
+			<div class="main">
+			<p>Notice that in the grades example, A had two elements map to it, while F had none. We can classify functions based on such situations.</p>
+
+			<h2>Injectivity</h2>
+
+			<p>A function f is said to be <strong>injective</strong> or <strong>one-to-one</strong> if (f(x)=f(y))→(x=y) for all x and y in the domain of f. The function is said to be an <strong>injection</strong>.</p>
+
+			<p>Recall that, by contraposition, (f(x)=f(y))→(x=y) if and only if (x≠y)→(f(x)≠f(y)).</p>
+			
+
+			<p>Basically, this means that each element of the range has exactly one pre-image. Equivalently, each element of the codomain has at most one pre-image. In a function diagram, this means there is at most one incoming arrow to every element on the right hand side.</p>
+
+			<p>To show a function is injective:</p>
+			<ul>
+				<li>assume f(x)=f(y) and show that x=y,  <strong>or</strong></li>
+				<li>assume x≠y and show that f(x)≠f(y)</li>
+			</ul>
+
+			<p>To show a function is <strong>not</strong> injective, give an x and y such that x≠y but f(x)=f(y).</p>
+
+			<p>Here are some examples:</p>
+			<ul>
+				<li>
+					The function on the left is injective, but the function on the right is not:
+
+					<div class="image1"><p><img src="https://cglab.ca/~discmath/figures/function-injective.png" alt="A function which is injective and a function which is not" width="100%"/></p></div>
+				</li>
+
+				<li>
+					f:Z→Z  defined by f(x)=3x+2 is injective. To see this, assume f(x)=f(y). Then:
+					3x+2 = 3y+2
+					3x = 3y
+					x = y
+				</li>
+
+				<li>
+					The previous proof falls apart for f(x)=x<sup>2</sup>:
+					x<sup>2</sup> = y<sup>2</sup>
+					√x<sup>2</sup> = √y<sup>2</sup>
+					±x = ±y
+					which is not the same thing as x=y! Indeed, f(x)=x<sup>2</sup> is not injective since f(1)=1=f(−1) and 1≠−1.
+				</li>
+			</ul>
+
+			<h2>Surjectivity</h2>
+
+			<p>A function f:A→B is said to be <strong>surjective</strong> or <strong>onto</strong> if for every element b∈B, there is an element a∈A such that f(a)=b. The function is said to be a <strong>surjection</strong>.</p>
+
+			<p>Basically, this means that every element of the codomain has a pre-image. Equivalently, the codomain and range are the same. In a function diagram, this means there is at least one incoming arrow to every element on the right hand side.</p>
+
+			<p>To show a function is surjective, start with an arbitrary element b∈B and show what the preimage of b could be: show an a∈A such that f(a)=b. To show a function is <strong>not</strong> surjective, give a b such that f(a)≠b for any a∈A.</p>
+
+			Here are some examples:
+			<ul>
+				<li>
+					The function on the left is surjective, but the function on the right is not:
+
+					<div class="image2"><p><img src="https://cglab.ca/~discmath/figures/function-surjective.png" alt="A function which is surjective and a function which is not" width="100%"/></p></div>
+				</li>
+				
+				<li>f:Z→Z  defined by f(x)=x<sup>2</sup> is not surjective, since there is no x such that x<sup>2</sup>=−1 where x is an integer.</li>
+				
+				<li>f:R→R  defined by f(x)=3x+2 is surjective. To see this, suppose we have image 3x+2=y. To determine which pre-image gives this, observe that 3x+2=y is the same as 3x=y−2, which is the same as x=(y−2)/3. So, to get an output of y, give input (y−2)/3.</li>
+			</ul>
+
+			<p>Notice that:</p>
+			<ul>
+				<li>injective ↔  at <strong>most</strong> one image</li>
+				<li>surjective ↔ at <strong>least</strong> one image</li>
+			</ul>
+
+			<p>If a function is both injective and surjective, then each element of the domain is mapped to a unique element of the codomain (range). A function that is both injective and surjective is <strong>bijective</strong>. Such a function is called a <strong>bijection</strong>.</p>
+
+			<p>To show a function is bijective, show:</p>
+			<ul>
+				<li>it is injective (using the above techniques)</li>
+				<li>it is surjective (using the above techniques)</li>
+			</ul>
+
+			<p>Remember to show <em>both</em> parts, since functions can be any combination of injective and surjective. For example, from left-to-right, the following functions are injective but not surjective, surjective but not injective, injective and surjective, and neither injective nor surjective:</p>
+
+			<div class="image3"><p><img src="https://cglab.ca/~discmath/figures/function-properties.png" alt="Functions that demonstrate the possibile presence of the properties of injectivity and surjectivity" width="100%"/></p></div>
+
+			
+			<h2>Composition of Functions</h2>
+
+			<p>Given two functions f and g, we can use the output of one as the input to the other to create a new function f(g(x)). In this function, we evaluate g with input x and give the result to f to compute the final output.</p>
+
+			<p>Let f:B→C and g:A→B. The <strong>composition</strong> of f and g is denoted f∘g (read "f follows g") and is defined as (f∘g)(x)=f(g(x)). Note: for f∘g to be defined, the range of g must be a subset of the domain of f.</p>
+
+			<p>Graphically, we have:</p>
+			<div class=image4><p><img src="https://cglab.ca/~discmath/figures/function-composition.png" alt="A visual representation of the composition of two functions" width="100%"/></p></div>
+
+			<p>Here are some examples:</p>
+			<ul>
+				<li>
+					Define g:{a,b,c}→{a,b,c} and f:{a,b,c}→{1,2,3} in the following way:
+					<ul>
+						<li>g(a)=b, g(b)=c, g(c)=a</li>
+						<li>f(a)=3, f(b)=2, f(c)=1</li>
+					</ul>
+					Then f∘g is defined as:
+					<ul>
+						<li>(f∘g)(a)=f(g(a))=f(b)=2</li>
+						<li>(f∘g)(b)=f(g(b))=f(c)=1</li>
+						<li>(f∘g)(c)=f(g(c))=f(a)=3</li>
+					</ul>
+					However, g∘f is not defined since (g∘f)(a)=g(f(a))=g(3), which is not defined.
+				</li>
+				
+				<li>
+					Define f:Z→Z and g:Z→Z by f(x)=2x+3 and g(x)=3x+2. Then:
+					(f∘g)(x) = f(g(x))
+						     = f(3x+2)
+						     = 2(3x+2)+3
+						     = 6x+4+3
+						     = 6x+7
+					and
+					(g∘f)(x) = g(f(x))
+					         = g(2x+3)
+					         = 3(2x+3)+2
+					         = 6x+9+2
+					         = 6x+11
+					In general, f∘g ≠ g∘f!
+				</li>
+			</ul>
+
+			<p>One important case is composing a function with its inverse: Suppose f(a)=b. Then f<sup> -1</sup>(b)=a, and:</p>
+			<ul>
+				<li>(f<sup> -1</sup>∘f)(a)=f<sup> -1</sup>(f(a))=f<sup> -1</sup>(b)=a</li>
+				<li>(f∘f<sup> -1</sup>)(b)=f(f<sup> -1</sup>(b))=f(a)=b</li>
+			</ul>
+		</div>
+	</body>
+</html>

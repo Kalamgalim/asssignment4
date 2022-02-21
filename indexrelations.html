@@ -1,0 +1,188 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<link href="css/css_site/relations.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+  		<link rel="stylesheet" href="./css/font-awesome.min.css">
+  		<link rel="stylesheet" href="./css/lib.css">
+		<style>
+			body {
+				background-image: url("img/relations.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+	
+		<div class="allpage">
+			<h2>Relations</h2>
+
+			<p>Relations between elements of sets are very common. For example:</p>
+			<ul>
+				<li>sets of people related by the "father" relation</li>
+				<li>employees related to companies by the "employed by" relation</li>
+				<li>integers related to other integers by the "divisible by" relation</li>
+				<li>(...and many other examples)</li>
+			</ul>
+
+			<p>More formally: let A and B be sets. A <strong>binary relation</strong> from A to B is a subset of A × B.</p>
+
+			<p>Therefore, a binary relation R is just a set of ordered pairs. We write aRb to mean (a,b) ∈ R and a<strike>R</strike>b to mean (a,b) ∉ R. When (a,b) ∈ R, we say that "a is related to b by R".</p>
+
+			<p>Such relations are binary relations because A × B$ consists of pairs. In general, we can have relations that are subsets of A × B × C × . . . to give us an n-ary relation. We concentrate on the binary case.</p>
+
+			<p>For example, let A be the set of students at Carleton and B be the set of courses at Carleton. Let R be the "enrolled in" relation, so that (a,b) ∈ R (that is, aRb) if student a is enrolled in course b.</p>
+
+			<p>Note that you can think of all functions as relations (where the input is related to the output), but not vice versa (since a single element can be related to many others).</p>
+
+			<p>Sometimes, relations are between a set A and itself: a subset of A × A. In this case, we say the relation is on the set A.</p>
+
+			<p>Here are some more examples of relations:</p>
+
+			<ul>
+				<li>
+					Let A = {1,2,3,4}. What ordered pairs are in the relation R = {(a,b) | a divides b}?
+					<div class="r1">
+						R = {(1,1),(1,2),(1,3),(1,4),(2,2),(2,4),(3,3),(3,4)}
+					</div> 
+					This can be represented several ways:
+
+					<div>
+						<p><img class="image1" src="https://cglab.ca/~discmath/figures/relations-example1.png" alt="Two representations of the given relation" width="70%"/></p>
+					</div>
+				</li>
+				
+				<li>
+					The following are relations on Z:
+					<ul>
+						<li>R<sub>1</sub> = {(a,b) | a ≤ b}</li>
+						<li>R<sub>2</sub> = {(a,b) | a > b}</li>
+						<li>R<sub>3</sub> = {(a,b) | a = b or a = -b}</li>
+						<li>R<sub>4</sub> = {(a,b) | a = b}</li>
+						<li>R<sub>5</sub> = {(a,b) | a = b+1}</li>
+						<li>R<sub>6</sub> = {(a,b) | a+b ≤ 3}</li>
+					</ul>
+					We have:
+					<ul>
+						<li>(1,1) ∈ R<sub>1</sub>,R<sub>3</sub>,R<sub>4</sub>,R<sub>6</sub></li>
+						<li>(1,2) ∈ R<sub>1</sub>,R<sub>6</sub></li>
+						<li>(2,1) ∈ R<sub>2</sub>,R<sub>5</sub>,R <sub>6</sub></li>
+						<li>(1,-1) ∈ R<sub>2</sub>,R<sub>3</sub>,R<sub>6</sub></li>
+						<li>(2,2) ∈ R<sub>1</sub>,R<sub>3</sub>,R<sub>4</sub></li>
+					</ul>
+				</li>
+			</ul>
+
+			<h2>Properties of Relations</h2>
+
+			<p>Relations can have several properties which help to classify them.</p>
+
+			<ul>
+				<li>
+					<strong>Reflexivity</strong>: a relation R on a set A is <strong>reflexive</strong> if (a,a) ∈ R for all a ∈ A.
+
+					<p>For example, if A = {1,2,3,4}, then:</p>
+					<ul>
+						<li>R<sub>1</sub> = {(1,1),(1,2),(2,2),(2,3),(3,3),(3,1),(4,4)} is reflexive</li>
+						<li>R<sub>2</sub> = {(1,2),(2,3),(3,4)} is not reflexive since (1,1) ∉ R<sub>2</sub></li>
+						<li>R<sub>3</sub> = {(1,1),(2,2)(3,3),(1,4)} is not reflexive since (4,4) ∉ R<sub>3</sub></li>
+					</ul>
+
+					<p>As another example, the "divides" relation is reflexive since a = 1a for any integer a</p>
+				</li>
+				
+				<li>
+					<strong>Symmetry</strong>: a relation R on a set A is called <strong>symmetric</strong> if (a,b) ∈ R → (b,a) ∈ R for all a,b ∈ A
+				</li>
+				
+				<li>
+					<strong>Antisymmetry</strong>: a relation R on a set A is called <strong>antisymmetric</strong> if ((a,b) ∈ R∧(b,a) ∈ R) → (a=b) for all a,b ∈ A.
+					<p>Note: symmetry and antisymmetry are <em>not</em> mutually exclusive: a relation can have one, both, or neither. Consider the following relations on {1,2,3,4}:</p>
+
+					<ul>
+						<li>
+							R<sub>1</sub> = {(1,1),(1,2),(2,1),(2,2),(3,4),(4,1),(4,4)} 
+
+							<ul>
+								<li> not symmetric: (3,4) ∈ R<sub>1</sub> but (4,3)∉ R </li>
+								<li>not antisymmetric:(2,1),(1,2) ∈ R<sub>1</sub> but 1 ≠ 2</li>
+							</ul>
+						</li>
+						
+						<li>
+							R<sub>2</sub> = {(1,1),(1,2),(1,4),(2,1),(2,2),(3,3),(4,1)}
+							<ul>
+								<li>symmetric</li>
+								<li>not antisymmetric: (2,1),(1,2) ∈ R<sub>2</sub> </li>
+							</ul>
+						</li>
+						
+						<li>
+							R<sub>3</sub> = {(2,1),(3,1),(3,2),(4,1),(4,2),(4,3)}
+							<ul>
+								<li>not symmetric:(2,1) ∈ R<sub>3</sub> but (1,2) ∉ R<sub>3</sub></li>
+								<li>antisymmetric</li>
+							</ul>
+						</li>
+						
+						<li>
+							R<sub>4</sub> = {(1,1),(2,2)}
+							<ul>
+								<li>symmetric</li>
+								<li>antisymmetric</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+					<strong>Transitivity</strong>: a relation on a set A is called <strong>transitive</strong> if, for all a,b,c ∈ A,
+<div class="r2">
+						((a,b) ∈ R ∧ (b,c) ∈ R) → (a,c) ∈ R
+</div>
+
+					<p>For example, the following relations on Z are all transitive:</p>
+					<ul>
+						<li>{(a,b) | a ≤ b}</li>
+						<li>{(a,b) | a > b}</li>
+						<li>{(a,b) | a = b or a = -b}</li>
+						<li>{(a,b) | a = b}</li>
+					</ul>
+					<p>whereas the following are not:</p>
+					<ul>
+						<li>{(a,b) | a=b+1}</li>
+						<li>{(a,b) | a+b ≤ 3}</li>
+					</ul>
+
+					<p>The "divides" relation is also transitive. Suppose a|b and b|c. Then b=ka and c=lb for integers k and l. Therefore, c = lb = (lk)a, so a|c.</p>
+				</li>
+			</ul>
+
+
+	</body>
+</html>

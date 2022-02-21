@@ -1,0 +1,252 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<link href="css/css_site/mathlogic.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+  		<link rel="stylesheet" href="./css/font-awesome.min.css">
+  		<link rel="stylesheet" href="./css/lib.css">
+		<style>
+			body {
+				background-image: url("img/relations.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+		<div class="allpage">
+			<h2>Logic</h2>
+
+			<ul>
+				<li>
+					Logic gives precise meaning to statements
+					<ul>
+						<li>tells us precisely what statements mean</li>
+						<li>allows computers to reason without the baggage of language</li>
+					</ul>
+				</li>
+
+				<li>
+					the building block of logic is the <strong>proposition</strong>
+					<ul>
+						<li>
+							a <strong>declarative</strong> sentence that is either <strong>true</strong> or <strong>false</strong>
+							<ul>
+								<li>"Carleton University is located in Ottawa"</li>
+								<li>"1+1=2"</li>
+								<li>"1+1=3"</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+					sentences that are not declarative are not propositions:
+					<ul>
+						<li>"How are you feeling today?"</li>
+						<li>"Pay attention!"</li>
+					</ul>
+				</li>
+				
+				<li>
+					sentences that are neither true nor false are not propositions:
+					<ul>
+						<li>"x+y=z"</li>
+						<li>"This sentence is false."</li>
+					</ul>
+				</li>
+				
+				<li>we can assign propositions names like a,b,c, . . . for short</li>
+				<li>the <strong>truth value</strong> of a proposition is either T(true) or F(false)</li>
+				
+				<li>a single proposition should express a single fact:
+					<ul>
+						<li>"It is Monday and I am in class" is better expressed as two propositions: "It is Monday", "I am in class"</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h2>Connectives</h2>
+
+			How do we assert two propositions are true (or otherwise related) at once?
+
+			<ul>
+				<li>use <strong>connectives</strong> to create <strong>compound propositions</strong></li>
+
+				<li>
+					<strong>negation</strong>: if p is a propostion, then "it is not the case that p is true" is a compound proposition called the <em>negation</em> of p, written ¬p
+					<ul>
+						<li>The negation of "The network is functioning normally" is "It is not the case that the network is functioning normally" (or just "The network is not functioning normally")</li>
+						<li>as a general rule, the original propositions you define should not contain a negation</li>
+						<li>
+							the truth value of a negation can be determined using a <strong>truth table</strong>:
+			                 <p><img class="image1" src="https://concept-stories.s3.ap-south-1.amazonaws.com/test/Stories%20-%20Images_story_6216/image_2019-01-28%2012%3A08%3A13.814225%2B00%3A00" alt="negation truth table" width="25%"/></p>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<strong>conjunction</strong> ("and"): if p and q are propositions, then "p and q" is a compound proposition called the <em>conjunction</em> of p and q, written p ∧ q
+					<ul>
+						<li>"The program is fast and the program is accurate" (or just, "The program is fast and accurate")</li>
+						<li>
+							conjunction has the following truth table:
+		
+		                   <p><img class="image2" src="https://www.chilimath.com/wp-content/uploads/2020/02/truth-table-conjunction-792x1024.gif" alt="conjunction truth table" width="25%"/></p>
+						</li>
+						<li>there are many ways to express conjunction: "and", "but", "so", "also", ...</li>
+					</ul>
+				</li>
+				
+				<li>
+					<strong>disjunction</strong> ("or"): if p and q are propositions, then "p or q" is a compound proposition called the <em>disjunction</em> of p and q, written p ∨ q
+					<ul>
+						<li>"I work hard or I fail"</li>
+						<li>
+							disjunction has the following truth table:
+							<p><img class="image3" src="https://i.imgur.com/F5RSyjd.jpg" alt="disjunction truth table" alt="disjunction truth table" width="45%"/></p>
+						</li>
+						<li>disjunction in logic differs a bit from casual language</li>
+						<li>
+							there are two kinds of "or": <strong>inclusive</strong> and <strong>exclusive</strong>
+							<ul>
+								<li>inclusive: "Students must have taken computer science or calculus to enroll in this course"</li>
+								<li>exclusive: "The meal comes with a soup or salad"</li>
+							</ul>
+						</li>
+						<li>we will always assume <em>inclusive or</em> when we use the ∨  symbol</li>
+						<li>
+							for <em>exclusive or</em>, we write ⊕ and use the following truth table:
+							
+							<p><img class="image4" src="https://files.transtutors.com/test/qimg/66c9df0f-4e65-463b-8eb8-6094f35f346b.png" alt="exclusive truth table" width="25%"/></p>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+					<strong>implication</strong> ("if...then"): if p and q are propositions, then the <em>implication</em> "if p then q" is a compound propositon, written p → q
+					<ul>
+						<li>"If the website is down, then the technical support person must fix it"</li>
+						<li>We call p the <strong>hypothesis</strong> and q the <strong>conclusion</strong></li>
+						<li>
+							implication has the following truth table:
+						
+							<p><img class="image5" src="https://i.stack.imgur.com/R2aRo.png" alt="implication truth table"  width="28%"/></p>
+						</li>
+						<li>
+							there are many ways to write p → q in English:
+							<ul>
+								<li>if p then q</li>
+								<li>p implies q</li>
+								<li>if p, q</li>
+								<li>p only if q</li>
+								<li>p is sufficient for q</li>
+								<li>a sufficient condition for q is$p</li>
+								<li>q if p</li>
+								<li>q whenever p</li>
+								<li>q when p</li>
+								<li>q is necessary for p</li>
+								<li>q follows from p</li>
+								<li>a necessary condition for p is q</li>
+							</ul>
+						</li>
+						<li>when p is false, p → q is true <strong>regardless</strong> of the truth value of q</li>
+						<li>
+							given p → q, we can define a few special propositions:
+							<ul>
+								<li>q → p is the <strong>converse</strong></li>
+								<li>¬q → ¬p is the <strong>contrapositive</strong></li>
+								<li>¬p → ¬q is the <strong>inverse</strong></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+					<strong>biconditional</strong> ("if and only if"): if p and q are propositions, then the <em>biconditional</em> "p if and only if q" is a compound propositon, written p ↔ q
+					<ul>
+						<li>"You will pass this course if and only if you study"</li>
+						<li>
+							The biconditional has the following truth table:
+							
+							<p><img class="image6" src="https://miro.medium.com/proxy/1*PytIuqVtWbvpD7GuoUx66g.png" alt="biconditional truth table"  width="25%"/></p>
+						</li>
+						<li>"if and only if" is often abbreviated to "iff"</li>
+						<li>we say "p is necessary and sufficient for q", "if p then q, and conversely", or "p iff q"</li>
+					</ul>
+				</li>
+			</ul>
+
+			A quick note on precedence:
+			<ul>
+				<li>we will use brackets as much as possible to make precedence clear</li>
+				<li>
+					as a general rule, negation applies to whatever is directly after only
+					<ul>
+						<li>¬p ∨ q is (¬p)∨(q)</li>
+					</ul>
+				</li>
+				<li>use brackets for everything else so there is no ambiguity</li>
+			</ul>
+
+			<h2>Translating Sentences</h2>
+
+			<ul>
+				<li>
+					Let a be the proposition "the computer lab uses Linux", b be the proposition "a hacker breaks into the computer" and c be the proposition "the data on the computer is lost."
+					<ul>
+						<li>(a → ¬b)∧(¬b → ¬c)means "If the computer in the lab uses Linux then a hacker will not break into the computer, and if a hacker does not break into the computer then the data on the computer will not be  lost."</li>
+						
+						<li>¬(a ∨ ¬b) means "It is not the case that either the computer in the lab uses Linux or a hacker will break into the computer." (This is a bit awkward. We will learn how to phrase this better later.)</li>
+						
+						<li>c ↔ (¬a ∧ b) means "The data on the computer is lost if and only if the computer in the lab does not use Linux and a hacker breaks into the computer."</li>
+					</ul>
+				</li>
+				
+				<li>
+					How could we translate "If the hard drive crashes then the data is lost"?
+					<ul>
+						<li>Let h be the proposition "the hard drive crashes" and d be the proposition "the data is lost." The sentence translates to h → d.</li>
+					</ul>
+				</li>
+				
+				<li>
+					How could we translate "The infrared scanner detects motion only if the intruder is in the room or the scanner is defective"?
+					<ul>
+						<li>Let m be the proposition "the infrared scanner detects motion", i be the proposition "the intruder is in the room" and d be the proposition "the scanner is defective." The sentence translates to m → (i ∨ d).</li>
+					</ul>
+				</li>
+				
+				<li>
+					How could we translate "If the server is down and the network connection is lost, then email is not available but I can still play games" into propositional logic?
+					<ul>
+						<li>Let s be the proposition "the server is down", n be the proposition "the network connection is lost", e be the proposition "email is available" and g be the proposition "I can play games." The sentence translates to (s ∧ n) → (¬e ∧ g).</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<link href="css/css_site/proofs.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+  		<link rel="stylesheet" href="./css/font-awesome.min.css">
+  		<link rel="stylesheet" href="./css/lib.css">
+		<style>
+			body {
+				background-image: url("img/relations.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+		<div class="main">
+			<h2>Methods of proof</h2>
+
+			How do we go about <em>forming</em> arguments (proofs)?
+
+			<ul>
+				<li><strong>Direct proofs</strong>: to prove an implication p → q, start by assuming that p is true, and then prove that q is true under this assumption.
+					<ul>
+						<li>
+							Prove that if n is an odd integer, then n<sup>2</sup> is an odd integer.
+
+							<p>Assume that n is an odd integer. Therefore, we can write n=2k+1 for some integer k. So n<sup>2</sup> = (2k+1)<sup>2</sup> = 4k<sup>2</sup> + 4k + 1 = 2(2k<sup>2</sup> + 2k) + 1. This has form $2k<sup>'</sup>+1 for an integer k<sup>'</sup> and is therefore odd.</p>
+						</li>
+					</ul>
+				</li>
+
+				<li><strong>Indirect proof</strong>: Recall that p → q≡¬q → ¬p. Therefore, to prove p → q, we could instead prove ¬q → ¬p using a direct proof: assume  ¬q and prove  ¬p.
+					<ul>
+						<li>
+							Prove that if 3n + 2 is odd, then n is odd.
+
+							<p>We instead prove that if n is even, then 3n + 2 is even. Assume n is even; then n = 2k for some integer k. So 3n + 2 = 3(2k) + 2 = 6k + 2 = 2(3k + 1), which has the form 2k' for an integer k' and is therefore even.</p>
+						</li>
+
+						<li>
+							Prove that the sum of two rational numbers is rational.
+
+							<p>We will attempt to prove this directly: if r and s are rational numbers, then r + s is a rational number. Assume that r and s are rational numbers. Then r = a/b and s = c/d where a,b,c,d ∈ Z and b,d ≠ 0by the definition of rational numbers. Now, r+s=(ad+bc)/bd. Since a,b,c,d ∈ Z, ad + bc and bd are both integers. Since b,d ≠ 0, we have bd ≠ 0. Therefore, r+s is rational. A direct proof succeeded!</p>
+						</li>
+
+						<li>
+							Prove that if n is an integer and n<sup>2</sup> is odd, then n is odd.
+
+							<p>We will attempt to prove this directly. Assume n is an integer and n<sup>2</sup> is odd. Then n<sup>2</sup>=2k+1 and so n=±√2k+1. It is not obvious how to proceed at this point, so we will turn to an indirect proof. Assume n is even. Then n=2k, and so n<sup>2</sup>=(2k)<sup>2</sup>=4k<sup>2</sup>=2(2k<sup>2</sup>). Therefore, n<sup>2</sup> is even. An indirect proof worked!</p>
+						</li>
+					</ul>
+				</li>
+
+				<li><strong>Vacuous/trivial proofs</strong>: When trying to prove p → q and p is false, then the statement follows automatically.
+					<ul>
+						<li>
+							Let P(n) denote "if n>1, then n<sup>2</sup>>n". Prove P(0).
+
+							<p>The statement is "if 0>1, then 0<sup>2</sup>>0. But it is not the case that 0>1, so the hypothesis is false and therefore the implication is true.</p>
+						</li>
+					</ul>
+				</li>
+				
+				<li><strong>Proof by contradiction</strong>: Suppose we want to prove the proposition p. If we can instead show that ¬p → F (that is, ¬p leads to a contradiction), then ¬p must be false. Thus, p is true. Observe that if we want to prove p → q by contradiction, we assume ¬(p → q)≡¬(¬p∨q)≡p∧¬q.
+					<ul>
+						<li>
+							Prove that √2 is irrational.
+
+							<p>Instead, assume that √2 is and try to derive a contradiction. If √2 is rational, then √2=a/b for some integers a,b with b≠0. We can further assume that a and b have no common factor, since if they do, we can divide through by this common factor to produce new values of a and b.</p>
+
+							<p>Now, since √2=a/b, we have 2=a<sup>2</sup>/b<sup>2</sup> and so 2b<sup>2</sup>=a<sup>2</sup>. Therefore, a<sup>2</sup> is even and so a is even. Since a is even, we have a=2c for some integer c. Now, substitute this value of a into 2b<sup>2</sup>=a<sup>2</sup> to get 2b<sup>2</sup>=(2c)<sup>2</sup>=4c<sup>2</sup>. We now have that b<sup>2</sup>=2c<sup>2</sup>, so b<sup>2</sup> is even and thus b is even. Therefore, both a and b are even, so they have a common factor of 2. This contradicts the assumption that a and b have no common factor, and so our assumption that √2 is rational must be wrong. Therefore, √2 is irrational.
+
+</p>
+						</li>
+					</ul>
+				</li>
+				
+				<li><strong>Proof by cases</strong>: To prove a statement of the form (p1∨p2∨p3∨⋯) → q, we can instead prove (p1→q)∧(p2→q)∧(p3→q)∧. . ., since it is logically equivalent to the original proposition.
+					<ul>
+						<li>
+							Prove that if x and y are real numbers, then |xy|=|x||y|.
+
+							<p>We can consider the following cases:</p>
+
+							<ol>
+								<li>x≥0  and y≥0. Then |xy|=xy=|x||y|, and so the statement holds.</li>
+								<li>x≥0 and y<0. Then |y|=−y>0, and so |xy|=x(−y)=|x||y|, and so the statement holds.</li>
+								<li>x<0  and y≥0. Then |x|=−x>0, and so |xy|=(−x)y=|x||y|, and so the statement holds.</li>
+								<li>x<0  and y<0. Then |x|=−x>0 and |y|=−y>0, and so |xy|=(−x)(−y)=|x||y|, and so the statement holds.</li>
+							</ol>
+
+							<p>Observe that these four cases cover all possible choices for x and y. Since the statement holds in every case, the statement must be true for all real numbers.</p>
+						</li>
+					</ul>
+				</li>
+				
+				<li><strong>Equivalence proofs</strong>: To prove the biconditional p↔q, prove (p→q)∧(q→p). The phrase "if and only if" indicates that an equivalence proof will be needed; a common error is to prove p→q but not q → p.
+					<ul>
+						<li>
+							Prove that n is odd if and only if n<sup>2</sup> is odd.
+
+							<p>We must prove two things. First, we show that if n is odd then n<sup>2</sup> is odd. We will do so directly: assume that n is odd. Then n=2k+1 for some integer k. Thus, n<sup>2</sup>=(2k+1)<sup>2</sup>=4k<sup>2</sup>+4k+1=2(2k<sup>2</sup>+2k)+1, which has the form 2k′+1 and is thus odd.</p>
+
+							<p>We now show that if n<sup>2</sup> is odd then n is odd. We will do this indirectly: assume n is even. Then n=2k for some integer k. Thus, n<sup>2</sup>=(2k)<sup>2</sup>=4k<sup>2</sup>=2(2k<sup>2</sup>), which has the form 2k′ and is thus even.
+
+.</p>
+						</li>
+					</ul>
+				
+			</ul>
+		</div>
+	</body>
+</html>

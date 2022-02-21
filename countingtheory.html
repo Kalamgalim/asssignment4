@@ -1,0 +1,103 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/css_site/countingtheory.css">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+  		<link rel="stylesheet" href="./css/font-awesome.min.css">
+  		<link rel="stylesheet" href="./css/lib.css">
+  		<style>
+			body {
+				background-image: url("img/functions.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		 <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+		
+		<div class="allpages">
+			<h2>Counting Theory</h2>
+
+			<p>Notice that a bijection exists between two sets if and only if they have the same size. This allows us to reason about the sizes of infinite sets.</p>
+
+			<p>Consider Z<sup>+</sup> = {1,2, . . .}. We call a set <strong>countable</strong> if:</p>
+			<ul>
+				<li>it is finite, <strong>or</strong></li>
+				<li>
+					it has the same cardinality as Z<sup>+</sup>
+					<ul>
+						<li>i.e., there is a bijection between it and Z<sup>+</sup></li>
+						<li>i.e., the elements of the set can be listed in order (first, second, third, ...)</li>
+					</ul>
+				</li>
+			</ul>
+
+			<p>Otherwise, the set is <strong>uncountable</strong>.</p>
+
+			<p>Here are some examples.</p>
+			<ul>
+				<li>
+					<p>Are there more positive integers or positive odd integers?</p>
+
+					<p>This is the same as asking if the positive odd integers are countable, which is the same thing as asking if there is a bijection from Z<sup>+</sup> to {1,3,5,7,9,. . .}.</p>
+
+					<p>We claim f(n)=2n−1 is such a bijection. To see that f is injective, suppose f(n)=f(m); then 2n−1=2m−1, so 2n=2m, so n=m. To see that f is surjective, suppose  t∈{1,3,5,7,9,. . .}; then t=2k−1, so t=2k−1=f(k).</p>
+
+					<p>Since f is injective and surjective, it is bijective. Therefore, there are equally many positive integers as positive odd integers!</p>
+				</li>
+
+				<li>
+					<p>Are there more positive integers or positive rational numbers?</p>
+
+					<p>We need f : Z<sup>+</sup> → Q<sup>+</sup>. Note that we just need to <em>list</em> the positive rational numbers in some way, since the first element can be f(1), the second can be f(2), and so on. How do we achieve such a listing?</p>
+
+					<p>A rational number has the form p/q. Since we are dealing with positive rational numbers, we have p,q ∈ Z<sup>+</sup>. The list consists of all positive rationals with p+q=2, then all positive rationals with p+q=3, then all positive rationals with p+q=4, and so on. We do not repeat a number if we encounter it again. Note that there are only a finite number of rationals with p+q=k for a fixed k! The list looks like this:</p>
+
+					<div class="image1"><p><img src="https://cglab.ca/~discmath/figures/function-rationalscountable.png" alt="A listing of the positive rational numbers" width="100%"/></p></div>
+
+					<p>Therefore, there are equally many positive integers as positive rationals!</p>
+				</li>
+
+				<li>
+					<p>Are there more positive integers or real numbers?</p>
+
+					<p>This is the same as asking if R is countable. We will focus on an even "easier" problem: is the set {x|(x∈R)} (the set of real numbers strictly between 0 and 1) countable?</p>
+
+					<p>We will show that it is <em>not</em> countable. We prove this by contradiction, so suppose that it is countable. </p>
+
+					
+					<p>Now, we come up with a real number  that is not on this list. This will contradict the countability assumption! Consider r = 0.d<sub>1</sub>d<sub>2</sub>d<sub>3</sub>. . .</p>
+
+					
+
+					<p>Therefore, r is not on the list, and we have a contradiction! Therefore, the real numbers are uncountable: they are bigger than Z<sub>+</sub>. (Why doesn't this argument work for the previous examples which were countable?)</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

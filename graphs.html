@@ -1,0 +1,146 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<link href="css/css_site/graphs.css" rel="stylesheet">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+  		<link rel="stylesheet" href="./css/font-awesome.min.css">
+  		<link rel="stylesheet" href="./css/lib.css">
+		<style>
+			body {
+				background-image: url("img/functions.jpg");
+			}
+		</style>
+	</head>
+	<body>
+				 <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+</button>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <a class="navbar-brand" href="#">MAIN MENU</a>
+  </div>
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="Libruary.html">Library</a></li>
+    <li><a href="VideoCourse.html">Video Courses</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="#"><i class="fafa-envelope-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+  </div>
+		<div class="main">
+			<h2>Graphs</h2>
+
+			<p>Graphs can be used to model problems from virtually any field.</p>
+
+			<p>A <strong>graph</strong> is a pair (V,E) where V is a set called the <strong>vertex set</strong> and E is a set called the <strong>edge set</strong>. Each edge in E describes how vertices in V are connected.</p>
+
+			<p>Here is an example of a graph:</p>
+
+			<div class=image1><p><img src="https://cglab.ca/~discmath/figures/graphs-example1.png" alt="An example of a graph" width="100%"/></p></div>
+
+			<p>This particular graph is a <strong>simple graph</strong>:</p>
+			<ul>
+				<li>no edge connects a vertex to itself</li>
+				<li>only one edge between two vertices</li>
+			</ul>
+
+			<p>In this graph, edges don't have a direction. We say that the graph is <strong>undirected</strong>. Therefore, edges can be represented as sets consisting of two vertices. For the above graph,</p>
+
+			<ul>
+				<li>
+					V={San Francisco, Los Angeles, Denver, Chicago, Detroit, New York, Washington}
+				</li>
+				
+				<li>
+					E={
+						{San Francisco,Denver}, <br>
+						{San Francisco,Los Angeles},<br>
+						{Los Angeles,Denver},<br>
+						{Denver,Chicago},<br>
+						{Chicago,Detroit},<br>
+						{Detroit,New York},<br>
+						{New York,Washington},<br>
+						{Washington,Chicago},<br>
+						{Chicago,New York}<br>
+					}<br>
+				</li>
+			</ul>
+
+			<p>Sometimes, we might want to allow multiple edges between vertices. Such graphs are called <strong>multigraphs</strong>:</p>
+ 
+			<div class=image2><p><img src="https://cglab.ca/~discmath/figures/graphs-example2.png" alt="An example of a multigraph" width="85%"/></p></div>
+
+			<p>Edges are still undirected; we can represent them as sets of two vertices. However, now these sets can appear more than once. We say that if there are m distinct edges between u and v, the edge {u,v} has <strong>multiplicity</strong> m. Multigraphs are used, for example, to model redundant connections in a network.</p>
+
+			<p>We might also want to relax the restriction that there are no edges between a vertex and itself. Such edges are called <strong>self-loops</strong> and a graph that contains self-loops is called a <strong>pseudograph</strong>. Self-loops model such things as loopbacks in networks.</p>
+
+			<p>We can also have <strong>directed</strong> versions of these graphs, where edges only go in one direction. Here is an example of a directed multigraph:</p>
+
+			<div class=image3><p><img src="https://cglab.ca/~discmath/figures/graphs-example3.png" alt="An example of a directed multigraph" width="85%"/></p></div>
+
+			<p>Directed edges can be represented as an ordered pair (u,v) instead of a set {u,v}. Directed edges model such things as single duplex lines or one-way streets in road networks.</p>
+
+			<p>There are many uses of graphs:</p>
+			<ul>
+				<li>social networks (Facebook, etc.)</li>
+				<li>Hollywood graph (Six Degrees of Kevin Bacon)</li>
+				<li>Web graph</li>
+			</ul>
+
+			<h2>Representing Graphs</h2>
+
+			<p>We need a way of representing graphs if we want to perform operations on them. We could simply list the vertices and edges, but that is a lot of work and it is hard to extract much information from that representation.</p>
+
+			<p>Here are two alternatives:</p>
+
+			<ul>
+				<li>
+					<strong>adjacency list</strong>: For each vertex, list the vertices that are connected to that vertex by an edge. Such vertices are said to be <strong>adjacent</strong>. (This works for both directed and undirected graphs, even if they contain loops.)
+
+					<div class=image4><p><img src="https://cglab.ca/~discmath/figures/graphs-adjacencylist1.png" alt="An example of an adjacency list" width="90%"/></p></div>
+
+					<div class=image5><p><img src="https://cglab.ca/~discmath/figures/graphs-adjacencylist2.png" alt="Another example of an adjacency list" width="90%"/></p></div>
+				</li>
+				
+				<li>
+					<strong>adjacency matrix</strong>: one row and one column for each vertex v<sub>1</sub>,v<sub>2</sub>,. . .,v<sub>n</sub>, row i column j is 1 if the edge is in E, 0 otherwise. (For this to work, you have to fix some ordering on the vertices.)
+
+					<div class=image6><p><img src="https://cglab.ca/~discmath/figures/graphs-adjacencymatrix1.png" alt="An example of an adjacency matrix" width="90%"/></p></div>
+
+					<p>For simple undirected graphs, the adjacency matrix is symmetric (a<sub>ij</sub>=a<sub>ji</sub> and the main diagonal is all 0s (a<sub>ii</sub>=0) since no self-loops are allowed.</p>
+
+					<p>In general, we can allow for multigraphs by using the multiplicities as entries instead of just 0 or 1.</p>
+
+					<div class=image7><p><img src="https://cglab.ca/~discmath/figures/graphs-adjacencymatrix2.png" alt="Another example of an adjacency matrix" width="90%"/></p></div>
+				</li>
+			</ul>
+
+			<h2>Adjacency and Degree</h2>
+
+			<p>Let G=(V,E) be a graph.</p>
+
+			<ul>
+				<li>two vertices are <strong>adjacent</strong> (are <strong>neighbours</strong>) in G if u and v are endpoints of some edge in G</li>
+				<li>if edge e connects u and v, we say e is <strong>incident on</strong> u  (and v) or incident  <strong>with</strong> u and  v</li>
+				<li>the <strong>degree</strong> of a vertex in an undirected graph is the number of edges incident with it, denoted by degv. If a self-loop is present, it is counted twice!</li>
+			</ul>
+
+			<p>For example:</p>
+
+			<div class=image8><p><img src="https://cglab.ca/~discmath/figures/graphs-adjacencydegree.png" alt="Examples of adjacency and degree" width="90%"/></p></div>
+
+		
+			
+		</div>
+	</body>
+</html>
