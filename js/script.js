@@ -7,3 +7,9 @@ function animate() {
     heading.classList.toggle("animate__animated")
     heading.classList.toggle("animate__shakeY");
 }
+
+// Sound on click
+function clickSound() {
+    document.getElementById('click').play();
+}
+
