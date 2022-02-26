@@ -390,3 +390,13 @@ background-size: 100%;
   background: #04AA6D;
   width: 0%;
 }
+
+
+.animation {
+    padding-bottom: 20px;
+}
+.animation .h2{
+    font-weight: 200;
+    margin: 0.4em 0;
+}
+.animation .h2 { font-size: 3.5em; }
